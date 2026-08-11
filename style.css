@@ -773,3 +773,50 @@ section:not(.hero):not(.quote):not(.closing-cta){
     margin-top:12px;
   }
 }
+/* THANK YOU PAGE — NEXT STEPS */
+
+.next-steps{
+  padding:70px 7%;
+  background:#101010;
+  border-top:1px solid #222;
+}
+
+.next-steps h2{
+  font-size:clamp(38px,6vw,58px);
+  line-height:1.05;
+  margin-bottom:35px;
+}
+
+.next-steps .step{
+  border-top:1px solid #333;
+  padding:24px 0;
+  max-width:850px;
+}
+
+.next-steps .step strong{
+  display:block;
+  font-size:16px;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+
+.next-steps .step p{
+  color:#aaa;
+  font-size:16px;
+  line-height:1.7;
+  margin:0;
+}
+
+@media(max-width:700px){
+  .next-steps{
+    padding:55px 7%;
+  }
+
+  .next-steps h2{
+    font-size:40px;
+  }
+
+  .next-steps .step{
+    padding:20px 0;
+  }
+}
