@@ -467,3 +467,258 @@ footer p {
     grid-row: span 1;
   }
 }
+
+/* ===== NXG RESIN FINAL MOBILE POLISH ===== */
+
+/* Trust bar */
+.trustbar{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+  padding:22px 6%;
+  background:#111;
+  border-top:1px solid #292929;
+  border-bottom:1px solid #292929;
+  color:#fff;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+/* Keep sections tighter */
+#about,
+#services,
+#work,
+.quote,
+.closing-cta,
+section.dark{
+  min-height:auto;
+}
+
+/* About section */
+#about{
+  padding-top:75px;
+  padding-bottom:75px;
+}
+
+#about .lead{
+  max-width:750px;
+  margin-bottom:45px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+
+.features b{
+  padding:25px;
+  border:1px solid #292929;
+  background:#111;
+}
+
+/* Services / process cards */
+.cards{
+  gap:15px;
+}
+
+.cards article{
+  min-height:auto;
+}
+
+/* Gallery polish */
+.gallery{
+  gap:12px;
+}
+
+.gallery img{
+  max-height:520px;
+  object-fit:cover;
+}
+
+/* Service area */
+section:not(.hero):not(.quote):not(.closing-cta){
+  height:auto;
+}
+
+/* Closing CTA */
+.closing-cta{
+  padding:85px 7%;
+  background:#080808;
+  text-align:left;
+}
+
+.closing-cta h2{
+  max-width:750px;
+  margin-bottom:20px;
+}
+
+.closing-cta p{
+  color:#bbb;
+  margin-bottom:30px;
+  font-size:20px;
+}
+
+.closing-cta .button{
+  display:inline-block;
+  margin-right:10px;
+}
+
+/* Quote form */
+.quote{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+.quote form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.quote input,
+.quote select,
+.quote textarea{
+  width:100%;
+  box-sizing:border-box;
+}
+
+.quote textarea{
+  min-height:150px;
+  resize:vertical;
+}
+
+/* Floating quote button */
+.floating-quote{
+  display:none;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:700px){
+
+  header{
+    padding:14px 6%;
+  }
+
+  header img{
+    width:145px;
+  }
+
+  header nav a:not(.cta){
+    display:none;
+  }
+
+  header .cta{
+    font-size:13px;
+    padding:14px 18px;
+  }
+
+  .trustbar{
+    gap:10px;
+    padding:18px 5%;
+    text-align:center;
+  }
+
+  .trustbar span{
+    width:100%;
+    font-size:11px;
+  }
+
+  #services,
+  #work,
+  #about,
+  section.dark{
+    padding-top:60px;
+    padding-bottom:60px;
+  }
+
+  #about h2,
+  .closing-cta h2{
+    font-size:44px;
+    line-height:1;
+  }
+
+  #about .lead{
+    font-size:19px;
+    line-height:1.65;
+    margin-bottom:30px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .features b{
+    padding:20px;
+    font-size:16px;
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+  }
+
+  .gallery img:first-child{
+    grid-column:1 / -1;
+    height:330px;
+  }
+
+  .closing-cta{
+    padding:65px 7% 80px;
+  }
+
+  .closing-cta p{
+    font-size:18px;
+  }
+
+  .closing-cta .button{
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    text-align:center;
+    margin:10px 0;
+  }
+
+  .quote{
+    padding:65px 7% 100px;
+  }
+
+  .quote h2{
+    font-size:44px;
+    line-height:1.05;
+  }
+
+  .quote input,
+  .quote select,
+  .quote textarea{
+    font-size:16px;
+  }
+
+  .floating-quote{
+    display:block;
+    position:fixed;
+    right:16px;
+    bottom:20px;
+    z-index:9999;
+    background:#fff;
+    color:#000;
+    border:1px solid #000;
+    padding:14px 18px;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    text-decoration:none;
+    box-shadow:0 6px 25px rgba(0,0,0,.35);
+  }
+}
