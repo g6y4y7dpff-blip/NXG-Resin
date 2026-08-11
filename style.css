@@ -722,3 +722,40 @@ section:not(.hero):not(.quote):not(.closing-cta){
     box-shadow:0 6px 25px rgba(0,0,0,.35);
   }
 }
+/* FINAL HEADER + SPACING TWEAK */
+
+@media(max-width:700px){
+
+  header{
+    min-height:72px;
+    padding:8px 6%;
+  }
+
+  header img{
+    width:125px;
+  }
+
+  header .cta{
+    padding:11px 14px;
+    font-size:11px;
+  }
+
+  #about,
+  #services,
+  #work,
+  section.dark,
+  .closing-cta,
+  .quote{
+    padding-top:52px;
+  }
+
+  section small{
+    margin-bottom:12px;
+  }
+
+  #about h2,
+  .closing-cta h2,
+  .quote h2{
+    margin-top:0;
+  }
+}
