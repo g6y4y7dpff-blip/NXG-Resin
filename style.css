@@ -759,3 +759,17 @@ section:not(.hero):not(.quote):not(.closing-cta){
     margin-top:0;
   }
 }
+@media(max-width:700px){
+
+  .closing-cta{
+    padding-bottom:110px;
+  }
+
+  .floating-quote{
+    bottom:28px;
+  }
+
+  .closing-cta .button{
+    margin-top:12px;
+  }
+}
