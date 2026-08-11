@@ -820,3 +820,16 @@ section:not(.hero):not(.quote):not(.closing-cta){
     padding:20px 0;
   }
 }
+@media(max-width:700px){
+
+  .floating-quote{
+    right:14px;
+    bottom:90px;
+    padding:12px 16px;
+    font-size:10px;
+  }
+
+  .quote{
+    padding-bottom:150px;
+  }
+}
