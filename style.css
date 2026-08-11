@@ -931,3 +931,18 @@ section:not(.hero):not(.quote):not(.closing-cta){
     font-size:36px;
   }
 }
+/* Fix project photos on mobile */
+@media(max-width:700px){
+
+  .project-photo img,
+  .project-photo.featured img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    display:block;
+  }
+
+  .project-photo{
+    background:#111;
+  }
+}
