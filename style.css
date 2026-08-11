@@ -833,3 +833,14 @@ section:not(.hero):not(.quote):not(.closing-cta){
     padding-bottom:150px;
   }
 }
+@media(max-width:700px){
+
+  .floating-quote{
+    display:none !important;
+  }
+
+  .quote{
+    padding-bottom:80px;
+  }
+
+}
