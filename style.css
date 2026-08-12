@@ -72,12 +72,14 @@ nav .cta {
   min-height: 760px;
   display: flex;
   align-items: center;
-  padding: 90px 7%;
+  padding: 195px 7% 90px;
+  margin-top: -105px;
   position: relative;
- background:
-  linear-gradient(90deg, rgba(0,0,0,.88), rgba(0,0,0,.35)),
-  url("images/IMG_1105.jpeg") center bottom/cover no-repeat;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.88), rgba(0,0,0,.35)),
+    url("images/IMG_1105.jpeg") center bottom/cover no-repeat;
 }
+
 
 .hero > div {
   max-width: 760px;
