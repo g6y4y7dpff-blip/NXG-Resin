@@ -905,7 +905,9 @@ section:not(.hero):not(.quote):not(.closing-cta){
 }
 
 .project-photo.featured img{
-  height:560px;
+    height:560px;
+    object-position:center bottom;
+}
 }
 
 @media(max-width:700px){
